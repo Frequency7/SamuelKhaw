@@ -116,6 +116,8 @@ section {
     background-color: #f5f5f5;
     padding-top: -10px; /* Adjust space above */
     margin-top: -40px; /* Move the section up */
+    padding-top: 100px; /* Adjust this value as necessary */
+    /* Other styles remain unchanged */
     
 }
 
