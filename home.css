@@ -306,12 +306,14 @@ footer {
     max-width: 1200px; /* Limit to prevent overstretching */
   }
 
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-  }
+
 
   body {
     font-size: 1rem; /* Scales better across devices */
   }
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 120px; /* Adjust for mobile */
+    }
+}
