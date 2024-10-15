@@ -317,3 +317,28 @@ footer {
         padding-top: 150px; /* Adjust for mobile */
     }
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+window.addEventListener('scroll', function() {
+    const backToTop = document.querySelector('.back-to-top');
+    if (window.pageYOffset > 300) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
