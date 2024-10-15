@@ -8,15 +8,20 @@ document.querySelector('button').addEventListener('click', () => {
   document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
 });
 
-// Smooth scroll for internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 100; // Adjust this based on your navbar height
+        const topPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+        window.scrollTo({
+            top: topPosition,
+            behavior: 'smooth'
+        });
+    });
 });
+
 
 // Fade-in effect on scroll
 window.addEventListener('scroll', () => {
