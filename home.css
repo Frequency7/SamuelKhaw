@@ -331,7 +331,7 @@ footer {
 }
 
 .back-to-top:hover {
-    background-color: #555;
+    background-color: #ff5733;
 }
 
 window.addEventListener('scroll', function() {
