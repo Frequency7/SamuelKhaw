@@ -1,7 +1,7 @@
 AOS.init({
-  duration: 1200,  // Slow down the animation
-  easing: 'ease-in-out',
-  once: false,  // Enable animation to trigger on every scroll
+    duration: 800,
+    easing: 'ease-out-quart',
+    offset: 120
 });
 
 document.querySelector('button').addEventListener('click', () => {
